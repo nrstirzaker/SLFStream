@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  let content = fs.readFileSync("public/index.html", "utf8");
+  let content = fs.readFileSync("/public/index.html", "utf8");
   res.send(content);
 });
 
