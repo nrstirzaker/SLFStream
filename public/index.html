@@ -6,6 +6,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
       @font-face {
+        font-family: Deutsch;
+        src: url(font/Deutsch.ttf);
+      }
+      @font-face {
         font-family: horizon;
         src: url(font/horizon.ttf) format("truetype");
         font-weight: bold;
@@ -13,49 +17,56 @@
     </style>
   </head>
   <body>
-    <div class="w-[500px] h-[725px]">
-      <div class="bg-red-500 text-white p-5">
-        <div class="text-lg">A Live Stream of</div>
-        <div class="font-[horizon] text-3xl">Horizon Zero Dawn</div>
-        <div class="text-lg">in aid of</div>
-        <div>The Sophie Lancaster Foundation</div>
-        <div class="text-lg">Sunday 4th October, starting at 10 am</div>
-      </div>
-
-      <div class="grid grid-cols-2 grid-rows-2 gap-4 p-2 text-base">
-        <div class="flex justify-center items-center">
-          <img class="w-[181] h-[219] object-fill" src="images/Sophie.png" alt="Sophie Lancaster" />
+    <div class="h-full w-screen flex justify-center items-center">
+      <div class="w-[500px] h-[725px]">
+        <div class="bg-red-500 text-white p-5">
+          <div class="text-lg">A Live Stream of</div>
+          <div class="font-[horizon] text-3xl">Horizon Zero Dawn</div>
+          <div class="text-lg">in aid of</div>
+          <div class="font-[Deutsch] text-3xl">The Sophie Lancaster Foundation</div>
+          <div class="text-lg">Sunday 4th October, starting at 10 am</div>
         </div>
 
-        <div class="">
-          <span class="font-bold">Sophie</span> was murdered in 2007 at the age of 20 because she was different, a Goth.
-          Sylvia her mother created the Foundation using her daughter's name for the acronym Stamp Out Prejudice, Hatred
-          and Interolerance Everywhere. The Foundation, in Sophie's memory, works in schools to combat hatred and
-          bullying
+        <div class="grid grid-cols-2 grid-rows-2 gap-4 p-2 text-base">
+          <div class="flex justify-center items-center">
+            <img class="w-[181] h-[219] object-fill" src="images/Sophie.png" alt="Sophie Lancaster" />
+          </div>
+
+          <div class="">
+            <span class="font-bold">Sophie</span> was murdered in 2007 at the age of 20 because she was different, a
+            Goth. Sylvia her mother created the Foundation using her daughter's name for the acronym
+            <span class="font-bold">S</span>tamp <span class="font-bold">O</span>ut
+            <span class="font-bold">P</span>rejudice, <span class="font-bold">H</span>atred and
+            <span class="font-bold">I</span>nterolerance <span class="font-bold">E</span>verywhere. The Foundation, in
+            Sophie's memory, works in schools to combat hatred and bullying
+          </div>
+
+          <div class="row-start-2">
+            Horizon Zero Dawn is the inspiring story of Aloy, outcast as an infant and shunned as she grows. She battles
+            prejudice, cults and killer machines to uncover the mystery of her birth and discovers a unique purpose that
+            she must fulfil or all will be lost
+          </div>
+
+          <div class="row-start-2 flex justify-center items-center">
+            <img class="w-[181] h-[219] object-contain" src="images/Aloy.png" alt="Aloy" />
+          </div>
         </div>
 
-        <div class="row-start-2">
-          Horizon Zero Dawn is the inspiring story of Aloy, outcast as an infant and shunned as she grows. She battles
-          prejudice, cults and killer machines to uncover the mystery of her birth and discovers a unique purpose that
-          she must fulfil or all will be lost
+        <div class="h-5 pl-10 pr-10 flex justify-between bg-red-200 p-2">
+          <div>
+            Please donate
+            <a href="https://www.justgiving.com/page/nigel-stirzaker-3" target="_blank">
+              <span class="underline text-blue-600">here</span>
+            </a>
+          </div>
+          <div>
+            You can watch the stream<a href="https://www.twitch.tv/nrstirzaker" target="_blank">
+              <span class="underline text-blue-600">here</span>
+            </a>
+          </div>
         </div>
-
-        <div class="row-start-2 flex justify-center items-center">
-          <img class="w-[181] h-[219] object-contain" src="images/Aloy.png" alt="Aloy" />
-        </div>
-      </div>
-
-      <div class="h-5 pl-10 pr-10 flex justify-between">
-        <div>
-          Please donate
-          <a href="https://www.justgiving.com/page/nigel-stirzaker-3" target="_blank">
-            <span class="underline text-blue-600">here</span>
-          </a>
-        </div>
-        <div>
-          You can watch the stream<a href="https://www.twitch.tv/nrstirzaker" target="_blank">
-            <span class="underline text-blue-600">here</span>
-          </a>
+        <div class="text-xs flex justify-center items-center bg-red-200 p-3">
+          Deutsch font (c) 1994 by J. Fordyce ( j4dice@aol.com )
         </div>
       </div>
     </div>
